@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nti_course_task1/session_task.dart';
-import 'package:nti_course_task1/task.dart';
+import 'package:nti_course_task1/task1.dart';
+import 'package:nti_course_task1/task2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SessionTask(),
+      home: Task2(),
     );
   }
 }
