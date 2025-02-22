@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:nti_course_task1/categories/appAssets.dart';
 import 'package:nti_course_task1/categories/buttons.dart';
 import 'package:nti_course_task1/categories/cards.dart';
 
@@ -8,16 +10,15 @@ class Task2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 240, 239, 239),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 240, 239, 239),
-        leading: IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.arrow_back_ios_new_sharp,
-              size: 15,
-            )),
-        title: Text("Today Tasks"),
+        leading: SvgPicture.asset(Appassets.arroBack),
+        title: Text(
+          "Today Tasks",
+          style: TextStyle(
+              fontFamily: 'Lexend Deca',
+              fontWeight: FontWeight.w300,
+              color: Color(0xff24252C)),
+        ),
         centerTitle: true,
         actions: [
           Container(
@@ -29,7 +30,7 @@ class Task2 extends StatelessWidget {
               onPressed: () {},
               label: Text(
                 "Add",
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Color(0xff000000)),
               ),
               icon: Icon(
                 Icons.add,
@@ -52,7 +53,7 @@ class Task2 extends StatelessWidget {
                     ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.green,
+                          backgroundColor: Color(0xff149954),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 30,
                             vertical: 10,
@@ -96,80 +97,50 @@ class Task2 extends StatelessWidget {
                         ))
                   ],
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  child: Cards(
-                    containerColor: Colors.black,
-                    title: "Work Task",
-                    subtitle: 'Go to supermarket to buy some milk & eggs',
-                    trailing: 'Future',
-                    icon: Icons.shopping_bag_outlined,
-                    textclolr: Colors.black,
-                    clolr: Color.fromARGB(255, 240, 239, 239),
-                  ),
+                Cards(
+                  containerColor: Colors.black,
+                  title: "Work Task",
+                  subtitle: 'Go to supermarket to buy some milk & eggs',
+                  trailing: 'Future',
+                  icon: SvgPicture.asset('assets/icons/bag.svg'),
+                  textclolr: Colors.black,
+                  clolr: Color.fromARGB(255, 240, 239, 239),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  child: Cards(
-                    containerColor: Colors.black,
-                    title: "Work Task",
-                    subtitle: 'Go to supermarket to buy some milk & eggs',
-                    trailing: 'Done',
-                    icon: Icons.shopping_bag_outlined,
-                    textclolr: Colors.white,
-                    clolr: Colors.green,
-                  ),
+                Cards(
+                  containerColor: Colors.black,
+                  title: "Work Task",
+                  subtitle: 'Go to supermarket to buy some milk & eggs',
+                  trailing: 'Done',
+                  icon: SvgPicture.asset('assets/icons/bag.svg'),
+                  textclolr: Colors.white,
+                  clolr: Color(0xff149954),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  child: Cards(
-                    containerColor: Colors.pink,
-                    title: "Home Task",
-                    subtitle: 'Add new feature for Do It app and commit it',
-                    trailing: 'Done',
-                    icon: Icons.home,
-                    textclolr: Colors.white,
-                    clolr: Colors.green,
-                  ),
+                Cards(
+                  containerColor: Color(0xffFF0084),
+                  title: "Home Task",
+                  subtitle: 'Add new feature for Do It app and commit it',
+                  trailing: 'Done',
+                  icon: SvgPicture.asset('assets/icons/bag.svg'),
+                  textclolr: Colors.white,
+                  clolr: Color(0xff149954),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  child: Cards(
-                    containerColor: Colors.green,
-                    title: "Personal Task",
-                    subtitle: 'Improve my English skills by trying to speek',
-                    trailing: 'In Progress',
-                    icon: Icons.shopping_bag_outlined,
-                    textclolr: Colors.black,
-                    clolr: Color(0xffCEEBDC),
-                  ),
+                Cards(
+                  containerColor: Color(0xff149954),
+                  title: "Personal Task",
+                  subtitle: 'Improve my English skills by trying to speek',
+                  trailing: 'In Progress',
+                  icon: SvgPicture.asset('assets/icons/bag.svg'),
+                  textclolr: Colors.black,
+                  clolr: Color(0xffCEEBDC),
                 ),
-                Container(
-                  margin: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(15))),
-                  child: Cards(
-                    containerColor: Colors.pink,
-                    title: "Home Task",
-                    subtitle: 'Add new feature for Do It app and commit it',
-                    trailing: 'Done',
-                    icon: Icons.home,
-                    textclolr: Colors.white,
-                    clolr: Colors.green,
-                  ),
+                Cards(
+                  containerColor: Color(0xffFF0084),
+                  title: "Home Task",
+                  subtitle: 'Add new feature for Do It app and commit it',
+                  trailing: 'Done',
+                  icon: SvgPicture.asset('assets/icons/bag.svg'),
+                  textclolr: Colors.white,
+                  clolr: Color(0xff149954),
                 ),
               ],
             ),

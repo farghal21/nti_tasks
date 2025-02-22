@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nti_course_task1/task1.dart';
-import 'package:nti_course_task1/task2.dart';
+import 'package:nti_course_task1/categories/color.dart';
+import 'package:nti_course_task1/sessiontextfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.backgroundColor,
+        appBarTheme: AppBarTheme(backgroundColor: AppColors.backgroundColor),
+      ),
       debugShowCheckedModeBanner: false,
-      home: Task2(),
+      home: SesionTextField(),
     );
   }
 }
