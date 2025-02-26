@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:nti_course_task1/any.dart';
 import 'package:nti_course_task1/categories/color.dart';
+import 'package:nti_course_task1/listviwetas.dart';
+import 'package:nti_course_task1/screen_one.dart';
+import 'package:nti_course_task1/scroolchildviwe.dart';
 import 'package:nti_course_task1/sessiontextfield.dart';
 import 'package:nti_course_task1/task2.dart';
 
@@ -18,7 +22,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: AppColors.backgroundColor),
       ),
       debugShowCheckedModeBanner: false,
-      home: Task2(),
+      home: ScreenOne(),
     );
   }
 }

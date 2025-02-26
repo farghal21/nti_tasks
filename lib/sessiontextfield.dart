@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SesionTextField extends StatelessWidget {
-  const SesionTextField({super.key});
+  final List<DropdownMenuItem> all;
+  const SesionTextField({super.key, required this.all});
 
   @override
   Widget build(BuildContext context) {
