@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nti_course_task1/categories/color.dart';
 import 'package:nti_course_task1/sessiontextfield.dart';
+import 'package:nti_course_task1/task2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(backgroundColor: AppColors.backgroundColor),
       ),
       debugShowCheckedModeBanner: false,
-      home: SesionTextField(),
+      home: Task2(),
     );
   }
 }
